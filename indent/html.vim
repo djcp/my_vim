@@ -1,3 +1,13 @@
+" Description:	html5 (and html4) indenter
+" Changed By:	Brian Gershon <brian.five@gmail.com>
+" Last Change:	30 Jan 2011
+" 
+"   1. Started with vim72 html indent file authored by Johannes Zellner (below)
+"   2. Added html5 list as described here:
+"      http://stackoverflow.com/questions/3232518/how-to-update-vim-to-color-code-new-html-elements
+"   3. Added this to a fork of https://github.com/othree/html5.vim
+"      which already provides nice html5 syntax highlighting.
+"
 " Description:	html indenter
 " Author:	Johannes Zellner <johannes@zellner.org>
 " Last Change:	Mo, 05 Jun 2006 22:32:41 CEST
@@ -95,27 +105,36 @@ call <SID>HtmlIndentPush('tt')
 call <SID>HtmlIndentPush('u')
 call <SID>HtmlIndentPush('ul')
 call <SID>HtmlIndentPush('var')
-call <SID>HtmlIndentPush('abbr')
+
+" New HTML 5 elements
 call <SID>HtmlIndentPush('article')
 call <SID>HtmlIndentPush('aside')
 call <SID>HtmlIndentPush('audio')
 call <SID>HtmlIndentPush('canvas')
+call <SID>HtmlIndentPush('command')
 call <SID>HtmlIndentPush('datalist')
 call <SID>HtmlIndentPush('details')
+call <SID>HtmlIndentPush('embed')
+call <SID>HtmlIndentPush('figcaption')
 call <SID>HtmlIndentPush('figure')
 call <SID>HtmlIndentPush('footer')
 call <SID>HtmlIndentPush('header')
 call <SID>HtmlIndentPush('hgroup')
+call <SID>HtmlIndentPush('keygen')
 call <SID>HtmlIndentPush('mark')
-call <SID>HtmlIndentPush('menu')
 call <SID>HtmlIndentPush('meter')
 call <SID>HtmlIndentPush('nav')
 call <SID>HtmlIndentPush('output')
 call <SID>HtmlIndentPush('progress')
+call <SID>HtmlIndentPush('rp')
+call <SID>HtmlIndentPush('rt')
+call <SID>HtmlIndentPush('ruby')
 call <SID>HtmlIndentPush('section')
+call <SID>HtmlIndentPush('source')
+call <SID>HtmlIndentPush('summary')
 call <SID>HtmlIndentPush('time')
 call <SID>HtmlIndentPush('video')
-
+call <SID>HtmlIndentPush('bdi')
 
 " [-- <ELEMENT ? O O ...> --]
 if !exists('g:html_indent_strict')
