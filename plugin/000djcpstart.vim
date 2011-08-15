@@ -1,14 +1,15 @@
 filetype on
 filetype plugin on
-filetype indent on
+filetype plugin indent on
 set nocompatible
-syntax enable
+syntax on
 set clipboard+=unnamed
 set ruler
 set nu
 set wrap
 set timeoutlen=250
-colorscheme vibrantink
+set background=dark
+colorscheme solarized
 
 set ts=2
 set bs=2
@@ -33,3 +34,5 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=1
+
+call pathogen#infect()
