@@ -9,7 +9,7 @@ set nu
 set wrap
 set timeoutlen=250
 set background=dark
-colorscheme BusyBee
+colorscheme vividchalk
 
 set ts=2
 set bs=2
